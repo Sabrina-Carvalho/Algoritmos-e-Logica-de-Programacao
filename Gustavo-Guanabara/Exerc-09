@@ -1,0 +1,13 @@
+//Faça um algoritmo que leia quanto dinheiro uma pessoa tem na carteira (em R$) e mostre quantos dólares ela pode comprar. Considere US$1,00 = R$3,45.
+
+Algoritmo "Conversao-Moeda"
+
+Var
+	moeda, dolar: real
+
+Inicio
+	Escreva("Insira a quantidade de dinheiro (em real) que você tem: ")
+	Leia (moeda)
+		dolar <- moeda / 3,45
+	Escreva ("Você poderá comprar: US$", dolar)
+Fimalgoritmo

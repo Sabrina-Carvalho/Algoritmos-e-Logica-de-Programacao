@@ -1,0 +1,14 @@
+//Faça um programa que leia um número inteiro e mostre o seu antecessor e seu sucessor. Ex: Digite um número: 9 O antecessor de 9 é 8 O sucessor de 9 é 10
+
+Algoritmo "Antecessor-Sucessor"
+
+Var
+	x, xx, yx: real
+
+Inicio
+	Escreva ("insira aqui um número: ")
+	Leia(x)
+		yx <- (x - 1)
+		xx <- (x + 1)
+	Escreva ("O antecessor de ",  x , " é ", yx , " e o sucessor de ", x , " é ", xx)
+Fimalgoritmo
