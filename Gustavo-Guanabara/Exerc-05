@@ -9,7 +9,7 @@ Inicio
 	Escreva ("Insira aqui a nota 1: ")
 	Leia (n1)
 	Escreva ("Insira aqui a nota 2: ")
-   Leia (n2)
-		media <-((n1 + n2) / 2)
+    Leia (n2)
+	media <-((n1 + n2) / 2)
 	Escreva ("A média entre ", n1 , " e ", n2 , " é igual a ", media)
 Fimalgoritmo

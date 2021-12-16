@@ -4,6 +4,7 @@ Algoritmo "Boas-Vindas"
 
 Var
 	x: caractere
+	
 Inicio
 	Escreva ("Qual é o seu nome? ")
 	Leia (x)

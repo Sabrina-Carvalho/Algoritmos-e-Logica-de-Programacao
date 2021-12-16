@@ -8,6 +8,6 @@ Var
 Inicio
 	Escreva("Insira a quantidade de dinheiro (em real) que você tem: ")
 	Leia (moeda)
-		dolar <- moeda / 3,45
+	dolar <- moeda / 3,45
 	Escreva ("Você poderá comprar: US$", dolar)
 Fimalgoritmo

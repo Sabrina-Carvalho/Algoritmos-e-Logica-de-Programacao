@@ -4,14 +4,15 @@ Algoritmo "Conversao"
 
 Var
 	m, km, hm, dam, dm, cm, mm: real
+    
 Inicio
 	Escreva ("Insira aqui, uma distância em metros: ")
 	Leia (m)
-		dam <- (m / 10)
-		hm <- (dam / 10)
-		km <- (hm / 10)
-		dm <- (m * 10)
-		cm <-  (dm * 10)
-		mm <- (cm * 10)
+	dam <- (m / 10)
+	hm <- (dam / 10)
+	km <- (hm / 10)
+	dm <- (m * 10)
+	cm <-  (dm * 10)
+	mm <- (cm * 10)
 	Escreva("A distância de ", m , "m, corresponde a: " , km , "km, ", hm , "Hm, ", dam , "Dam, ", dm, "dm, " , cm , "cm e ", mm , "mm.")
 Fimalgoritmo

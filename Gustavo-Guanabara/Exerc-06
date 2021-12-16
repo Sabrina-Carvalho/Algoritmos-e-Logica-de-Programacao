@@ -8,7 +8,7 @@ Var
 Inicio
 	Escreva ("insira aqui um número: ")
 	Leia(x)
-		yx <- (x - 1)
-		xx <- (x + 1)
+	yx <- (x - 1)
+	xx <- (x + 1)
 	Escreva ("O antecessor de ",  x , " é ", yx , " e o sucessor de ", x , " é ", xx)
 Fimalgoritmo

@@ -8,7 +8,7 @@ Var
 Inicio
 	Escreva ("Insira um número: ")
 	Leia (x)
-		xx <- (x * 2)
-		xxx <- (x / 3)
+	xx <- (x * 2)
+	xxx <- (x / 3)
 	Escreva ("O dobro de " , x , " é " , xx , ", e a terça parte de ",  x  , " é ",  xxx)
 Fimalgoritmo
