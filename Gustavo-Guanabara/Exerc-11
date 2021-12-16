@@ -1,0 +1,35 @@
+//Desenvolva uma lógica que leia os valores de A, B e C de uma equação do segundo grau e mostre o valor de Delta. 
+
+Algoritmo "Equacao-2º-Grau"
+
+Var
+    a, b, c, delta, x1, x2: real
+
+Inicio
+    Enquanto a = 0 Faça
+        Escreval("Insira um valor para A:")
+        Leia(a)
+        Se a = 0 Então
+            Escreval("Insira um valor maior que 0 para A")
+        Senão
+            Escreval("Insira um valor para B:")
+            Leia(b)
+            Escreval("Insira um valor para C:")
+            Leia(c)
+        Fimse
+    Fimenquanto
+    delta <- b^2 - 4 * a * C
+    Se delta = 0 Então  
+        x1 <- - b / (2 * a)
+        Escreval("Valor de Delta: ", delta)
+        Escreva("Valor de X'= X''= ", x1)
+    Senão
+        x1 <- (-b + raizq(delta)) / (2 * a)
+        x2 <- (-b - raizq(delta)) / (2 * a)
+        Escreval("Valor de X'= ", x1)
+        Escreva("Valor de X''= ", x2)
+    Fimse
+Fimalgoritmo
+
+
+
