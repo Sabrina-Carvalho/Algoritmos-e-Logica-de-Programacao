@@ -1,0 +1,14 @@
+//Crie um programa que leia o preço de um produto, calcule e mostre o seu PREÇO PROMOCIONAL, com 5% de desconto.
+
+Algoritmo "Desconto"
+
+Var
+   prod, preco, desc: real
+
+Inicio
+    Escreva ("Insira o valor do produto: ")
+    Leia (prod)
+    preco <- (prod - ((prod * 5) / 100))
+    Escreval ("Valor do produto: R$", prod)
+    Escreva ("Valor do preço PROMOCIONAL: R$", preco)
+Fimalgoritmo

@@ -1,0 +1,14 @@
+//Faça um algoritmo que leia o salário de um funcionário, calcule e mostre o seu novo salário, com 15% de aumento. 
+
+Algoritmo "Aumento"
+
+Var
+   sal, aum: real
+   
+Inicio
+      Escreva ("Insira o valor do salário: ")
+      Leia (sal)
+      aum <- (sal + ((sal * 15) / 100))
+      Escreval ("Valor do salário: R$", sal)
+      Escreva ("Salário com o aumento de 15%: R$", aum)
+Fimalgoritmo
