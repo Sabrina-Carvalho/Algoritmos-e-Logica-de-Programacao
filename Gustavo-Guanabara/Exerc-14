@@ -1,0 +1,18 @@
+//A locadora de carros precisa da sua ajuda para cobrar seus serviços. Escreva um programa que pergunte a quantidade de Km percorridos por um carro alugado e a quantidade de dias pelos quais ele foi alugado. Calcule o preço total a pagar, sabendo que o carro custa R$90 por dia e R$0,20 por Km rodado. 
+
+Algoritmo "Aluguel"
+
+Var
+   km, dia, total: real
+
+   
+Inicio
+    Escreva ("Insira a quantidade de quilometros percorridos pelo carro: ")
+    Leia (km)
+    Escreva ("Insira a quantidade de dias que o carro foi alugado: ")
+    Leia (dia)
+    total <- ((0.20 * km) + (90 * dia))
+    Escreval ("Quantidade de Km percorridos: ", km)
+    Escreval ("Quantidade de dias que o veículo foi alugado: ", dia)
+    Escreva ("Total do aluguel a pagar: R$", total)
+Fimalgoritmo
