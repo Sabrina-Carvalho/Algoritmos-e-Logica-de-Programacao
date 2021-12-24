@@ -1,0 +1,20 @@
+//Escreva um programa para calcular a redução do tempo de vida de um fumante. Pergunte a quantidade de cigarros fumados por dias e quantos anos ele já fumou. Considere que um fumante perde 10 min de vida a cada cigarro. Calcule quantos dias de vida um fumante perderá e exiba o total em dias.
+
+Algoritmo "Tempo-de-Vida"
+
+Var
+   anos_consumo, min, cigarro: inteiro
+   dia, x: real
+
+Inicio
+    Escreva ("Insira em anos, o seu tempo de consumo em cigarros: ")
+    Leia(anos_consumo)
+    Escreva ("Insira a quantidade de cigarros consumidos por dia: ")
+    Leia (cigarro)
+    min <- (10 * cigarro)
+    dia <- (min / 1440)
+    total <- (365 * anos_consumo) * dia
+    Escreval ("Quantidade de cigarros consumidos por dia: ", cigarro)
+    Escreval ("Tempo de consumo em anos: ", ano)
+    Escreval ("O tempo de vida perdido (em dias) pelo consumo de cigarros, foi de: ", total)
+Fimalgoritmo

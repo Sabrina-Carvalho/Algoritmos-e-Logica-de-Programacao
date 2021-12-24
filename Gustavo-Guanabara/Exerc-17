@@ -1,0 +1,18 @@
+//Escreva um programa que pergunte a velocidade de um carro. Caso ultrapasse 80Km/h, exiba uma mensagem dizendo que o usuário foi multado. Nesse caso, exiba o valor da multa, cobrando R$5 por cada Km acima da velocidade permitida.
+
+Algoritmo "Multa"
+
+Var
+   vel, multa: real
+
+Inicio
+    Escreva ("Insira a velocidade do veículo: ")
+    Leia(vel)
+        Se (vel > 80) então
+            multa <- (vel - 80) * 5
+            Escreval ("Cliente possui uma multa.")
+            Escreva ("Valor da multa: R$", multa, ",00")
+        Senão
+            Escreva ("Cliente não possui multa!")
+        Fimse
+Fimalgoritmo

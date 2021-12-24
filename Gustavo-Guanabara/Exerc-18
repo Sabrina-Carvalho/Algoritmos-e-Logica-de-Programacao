@@ -1,0 +1,21 @@
+//Faça um programa que leia o ano de nascimento de uma pessoa, calcule a idade dela e depois mostre se ela pode ou não votar.
+
+Algoritmo "Idade-para-Votar"
+
+Var
+   nasc, anoat, idade: inteiro
+
+Inicio
+    Escreva ("Insira o ano de nascimento: ")
+    Leia(nasc)
+    Escreva ("Insira o ano atual: ")
+    Leia (anoat)
+    idade <- anoat - nasc
+        Se (idade < 16) então
+            Escreval ("Idade atual: ", idade, " ano(s).")
+            Escreva ("Cidadão ainda não possui idade para votar.")
+        Senão
+            Escreval ("Idade atual: ", idade, " ano(s).")
+            Escreva ("Cidadão já possui idade para votar.")
+        Fimse
+Fimalgoritmo

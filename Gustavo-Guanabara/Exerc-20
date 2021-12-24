@@ -1,0 +1,16 @@
+//Desenvolva um programa que leia um número inteiro e mostre se ele é PAR ou ÍMPAR.
+
+Algoritmo "Par-ou-Impar"
+
+Var
+   x:inteiro
+
+Inicio
+   Escreva ("Insira um número inteiro:")
+   Leia (x)
+    Se (x Mod 2) = 0 então
+      Escreva ("O número ", x, " é um PAR.")
+   Senão
+        Escreva ("O número ", x, " é um ÍMPAR.")
+   Fimse
+Fimalgoritmo

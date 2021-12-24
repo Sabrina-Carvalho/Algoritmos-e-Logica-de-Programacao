@@ -1,0 +1,16 @@
+//Faça um algoritmo que leia um determinado ano e mostre se ele é ou não BISSEXTO. 
+
+Algoritmo "Ano-Bissexto"
+
+Var
+   ano: inteiro
+
+Inicio
+    Escreva ("Insira um ano: ")
+    Leia (ano)
+        Se (ano Mod 400 = 0) ou ((ano Mod 4 = 0) e (ano Mod 100 <> 0)) então
+            Escreva (ano, " é um ano bissexto!")
+        Senão
+            Escreva (ano, " não é um ano bissexto!")
+        Fimse
+Fimalgoritmo

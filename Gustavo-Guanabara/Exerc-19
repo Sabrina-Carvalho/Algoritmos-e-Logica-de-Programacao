@@ -1,0 +1,20 @@
+//Crie um algoritmo que leia o nome e as duas notas de um aluno, calcule a sua média e mostre na tela. No final, analise a média e mostre se o aluno teve ou não um bom aproveitamento (se ficou acima da média 7.0). 
+
+Algoritmo "Media"
+
+Var
+   nota1, nota2, media: real
+
+Inicio
+   Escreva ("Insira a 1ª nota: ")
+   Leia(nota1)
+   Escreva ("Insira a 2ª nota: ")
+   Leia (nota2)
+   media <- ((nota1 + nota2)/2)
+   Escreval ("A média do(a) aluno(a) foi de ", media, " pontos.")
+    Se (media >= 7) então
+        Escreva ("Aluno com bom aproveitamento de estudos.")
+   Senão
+      Escreva ("Aluno com mau aproveitamento de estudos.")
+   Fimse
+Fimalgoritmo
