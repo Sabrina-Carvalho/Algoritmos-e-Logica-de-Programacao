@@ -4,7 +4,7 @@ Algoritmo "Tempo-de-Vida"
 
 Var
    anos_consumo, min, cigarro: inteiro
-   dia, x: real
+   dia, total: real
 
 Inicio
     Escreva ("Insira em anos, o seu tempo de consumo em cigarros: ")
@@ -13,8 +13,8 @@ Inicio
     Leia (cigarro)
     min <- (10 * cigarro)
     dia <- (min / 1440)
-    total <- (365 * anos_consumo) * dia
+    total <- 365 * anos_consumo * dia
     Escreval ("Quantidade de cigarros consumidos por dia: ", cigarro)
-    Escreval ("Tempo de consumo em anos: ", ano)
-    Escreval ("O tempo de vida perdido (em dias) pelo consumo de cigarros, foi de: ", total)
+    Escreval ("Tempo de consumo em anos: ", anos_consumo)
+    Escreval ("O tempo de vida perdido pelo consumo de cigarros, foi de: ", total, " dias")
 Fimalgoritmo
