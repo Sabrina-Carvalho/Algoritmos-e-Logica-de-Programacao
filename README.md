@@ -1,4 +1,4 @@
-## 👩‍💻 Logica-de-Programacao
+## 👩‍💻 Algoritmos-e-Logica-de-Programacao
 
 ### Carx Usuárix, 
 
