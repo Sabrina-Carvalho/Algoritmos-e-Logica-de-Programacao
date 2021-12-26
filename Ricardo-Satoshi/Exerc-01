@@ -1,0 +1,16 @@
+//Receba o ano de nascimento e o ano atual. Calcule e mostre a sua idade e quantos anos terá daqui a 17 anos.
+
+Algoritmo "Idade"
+
+Var
+an, aa, ia, if: inteiro
+
+Inicio
+    Escreva("Insira seu ano de nascimento: ")
+	Leia (an)
+	Escreva("Insira a data do ano atual: ")
+	Leia(aa)
+	ia <- (aa-an)
+	if <- (ia + 17)
+	Escreva ("Sua idade atual é de", ia , " anos. E a sua idade daqui a 17 anos será de", if , " anos.")
+Fimalgoritmo
