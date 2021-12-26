@@ -1,1 +1,34 @@
 //Numa promoção exclusiva para o Dia da Mulher, uma loja quer dar descontos para todos, mas especialmente para mulheres. Faça um programa que leia nome, sexo e o valor das compras do cliente e calcule o preço com desconto. Sabendo que: - Homens ganham 5% de desconto - Mulheres ganham 13% de desconto 
+
+Algoritmo "Dia-da-Mulher"
+
+Var
+   valor_total, valor_desc: real
+   nome, gen: caractere
+
+Inicio
+    Escreva ("Insira seu nome completo: ")
+    Leia (nome)
+    Escreval ("Gênero: F / M")
+    Leia (gen)
+    Escreva ("Insira o valor das compras: ")
+    Leia (valor_total)
+    Escolha gen
+    Caso "F", "Feminino", "f", "feminino"
+        Escreval ("---------------------------------")
+        Escreval ("Cliente: ", nome)
+        Escreval ("Valor das compras R$", valor_total)
+        valor_desc <- (valor_total * (13 /100))
+        Escreval ("Desconto R$", valor_desc)
+        valor_total <- (valor_total - valor_desc)
+        Escreval ("Valor Total R$", valor_total)
+    Outrocaso
+        Escreval ("---------------------------------")
+        Escreval ("Cliente: ", nome)
+        Escreval ("Valor das compras R$", valor_total)
+        valor_desc <- (valor_total * (5 /100))
+        Escreval ("Desconto R$", valor_desc)
+        valor_total <- (valor_total - valor_desc)
+        Escreval ("Valor Total R$", valor_total)
+    Fimescolha
+Fimalgoritmo
