@@ -1,1 +1,23 @@
 //Escreva um programa que leia o ano de nascimento de um rapaz e mostre a sua situação em relação ao alistamento militar. - Se estiver antes dos 18 anos, mostre em quantos anos faltam para o alistamento. - Se já tiver depois dos 18 anos, mostre quantos anos já se passaram do alistamento.
+
+Algoritmo "Alistamento-Militar"
+
+Var
+ano_nasc, ano_atual, idade, anos_rest, anos_passad: inteiro
+
+Inicio
+    Escreva ("Insira seu ano de nascimento: ")
+    Leia (ano_nasc)
+    Escreva ("Insira o ano atual: ")
+    Leia (ano_atual)
+    idade <- ano_atual - ano_nasc
+    Escreval ("Idade atual: ", idade, " anos")
+        Se idade < 18 Então
+            anos_rest <- 18 - idade
+            Escreva ("Restam ", anos_rest, " anos para o alistamento militar.")
+        Senão
+            anos_passad <- idade - 18
+            Escreval ("Civil possui idade suficiente para realizar o alistamento militar.")
+            Escreva ("Já se passaram ", anos_passad, " ano(s).")
+        Fimse)
+Fimalgoritmo
