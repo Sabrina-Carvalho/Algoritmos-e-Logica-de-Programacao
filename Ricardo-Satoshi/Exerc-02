@@ -1,0 +1,16 @@
+//Calcule a quantidade de litros gastos em uma viagem, sabendo que o automóvel faz 12 km/l. Receber o tempo de percurso e a velocidade média.
+
+Algoritmo "Calcula-Litros"
+
+Var
+	litros, tempo_perc, vel_media, km: real
+	
+Inicio
+	Escreva ("Insira seu tempo de percurso: ")
+	Leia (tempo_perc)
+	Escreva ("Insira sua velocidade média:")
+	Leia (Vel_media)
+	km <- (tempo_perc * vel_media)
+	litros <- (km/12)
+	Escreval ("A quantidade de combustível que será(ão) gasto(s) em todo o percurso será(ão) de ", litros , " litro(s).")
+Fimalgoritmo
