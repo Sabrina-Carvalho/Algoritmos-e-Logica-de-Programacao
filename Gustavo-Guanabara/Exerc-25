@@ -1,1 +1,30 @@
 //Crie um programa que leia o tamanho de três segmentos de reta. Analise seus comprimentos e diga se é possível formar um triângulo com essas retas. Matematicamente, para três segmentos formarem um triângulo, o comprimento de cada lado deve ser menor que a soma dos outros dois.
+
+Algoritmo "Triângulo"
+
+Var
+a, b, c: real
+
+Inicio
+      Escreva ("Insira um valor para a reta A:")
+      Leia (a)
+      Escreva ("Insira um valor para a reta B:")
+      Leia (b)
+      Escreva ("Insira um valor para a reta C:")
+      Leia (c)
+      Se (a < b + c) e (b < a + c) e (c < a + b) Então
+         Escreval("             ")
+         Se (a = b) e (a = c) Então
+            Escreval ("É um triângulo Equilátero!! :D")
+         Senão
+            Se (a = b) ou (a = c) ou (b = c) Então
+               Escreval ("É um triângulo Isósceles!! :D")
+            Senão
+                 Escreval ("É um triângulo Escaleno!! :D")
+            Fimse
+        Fimse
+      Senão
+           Escreval("             ")
+           Escreval ("As medidas inseridas não formam nenhum triângulo. :( ")
+    Fimse
+Fimalgoritmo
