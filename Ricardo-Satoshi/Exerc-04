@@ -15,7 +15,7 @@ Inicio
 	Escreva ("Insira o número de dependentes:")
 	Leia (dependentes)
 	salario_bru <- (hrs_trabalhadas * valor_hr)
-	salario_liq <- salario_bru - ((salario_bru * perc_desc) / 100))
+	salario_liq <- salario_bru - ((salario_bru * perc_desc) / 100)
 	salario_final <- ((100 * dependentes) + salario_liq)
 	Escreval ("      ")
 	Escreva ("Salário a receber: R$", salario_final)
