@@ -1,0 +1,15 @@
+//Receba a quantidade de alimento em quilos. Calcule e mostre quantos dias durará esse alimento sabendo que a pessoa consome 50g ao dia.
+
+Algoritmo "Alimentos"
+
+Var
+	qtd_alimentos, gramas: inteiro
+	dias: real
+
+Inicio
+	Escreva ("Insira em quilos, a quantidade de alimentos: ")
+   Leia (qtd_alimentos)
+	gramas <- (qtd_alimentos * 1000)
+	dias <- (gramas / 50)
+	Escreval (qtd_alimentos, "kg de alimento durará para ", dias, " dias.")
+Fimalgoritmo

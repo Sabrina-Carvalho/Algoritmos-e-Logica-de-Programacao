@@ -1,0 +1,22 @@
+//Receba a quantidade de horas trabalhadas, o valor por hora, o percentual de desconto e o número de dependentes. Calcule o salário que serão as horas trabalhadas x o valor por hora. Calcule o salário líquido = (Salário Bruto – desconto). A cada dependente será acrescido R$ 100 no Salário Líquido. Exiba o salário a receber.
+
+Algoritmo "Salário"
+
+Var
+hrs_trabalhadas, valor_hr, perc_desc, dependentes, salario_liq, salario_bru, salario_final: real
+
+Inicio
+	Escreva ("Insira a quantidade de horas trabalhadas:")
+	Leia (hrs_trabalhadas)
+	Escreva ("Insira o valor por hora:")
+	Leia (valor_hr)
+	Escreva ("Insira o percentual de desconto:")
+	Leia (perc_desc)
+	Escreva ("Insira o número de dependentes:")
+	Leia (dependentes)
+	salario_bru <- (hrs_trabalhadas * valor_hr)
+	salario_liq <- salario_bru - ((salario_bru * perc_desc) / 100))
+	salario_final <- ((100 * dependentes) + salario_liq)
+	Escreval ("      ")
+	Escreva ("Salário a receber: R$", salario_final)
+Fimalgoritmo
