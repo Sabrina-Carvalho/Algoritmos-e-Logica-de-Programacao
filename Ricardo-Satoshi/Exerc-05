@@ -1,0 +1,20 @@
+//Calcule e mostre o quadrado dos números entre 10 e 150.
+
+Algoritmo "Quad-Num"
+
+Var
+	num, numQuad: inteiro
+	
+Inicio
+	Escreva ("Insira aqui um número de 10 a 150:")
+	Leia (num)
+	Se (10 > num) ou (num > 150) então
+	Escreva ("O número inserido não encontra-se entre 10 e 150.")
+	Senão
+		Enquanto (10 <= num) e (num <= 150) faça
+			numQuad <- num * num
+			Escreval ("O quadrado de ", num, " é: ", numQuad)
+			num <- (num + 1)
+		Fimenquanto
+    Fimse
+Fimalgoritmo

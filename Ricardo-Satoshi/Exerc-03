@@ -8,7 +8,7 @@ Var
 
 Inicio
 	Escreva ("Insira em quilos, a quantidade de alimentos: ")
-   Leia (qtd_alimentos)
+   	Leia (qtd_alimentos)
 	gramas <- (qtd_alimentos * 1000)
 	dias <- (gramas / 50)
 	Escreval (qtd_alimentos, "kg de alimento durará para ", dias, " dias.")
