@@ -25,7 +25,8 @@ Antes de começarmos, explicarei o propósito deste repositório:
 
 ***👉 Para quem se interessar...***
 
- Segue o link para a plataforma do **Curso em Vídeo** --> https://www.cursoemvideo.com/curso/curso-de-algoritmo/
+ 1. Link para a plataforma do **Curso em Vídeo** --> https://www.cursoemvideo.com/curso/curso-de-algoritmo/
+ 2. Link para **baixar o VisualG** --> https://visualg3.com.br/baixar-o-visualg3-0/
  
  ---
  
