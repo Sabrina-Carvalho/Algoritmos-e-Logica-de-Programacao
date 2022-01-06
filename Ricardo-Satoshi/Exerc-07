@@ -7,3 +7,28 @@ Supondo N = 4
 SERIE -> 1 + 1/2 + 1/3 + 1/4 ->
 SERIE -> 1 + 0.5 + 0.33 + 0.25 ->
 SERIE -> 2,08
+
+Obs.: Utilizar  Módulo(s) de Função(ões)
+
+Algoritmo Cal_serie_principal 
+Var
+	N: inteiro
+Inicio
+Escreva (“Digite um número: “) 
+Leia (N) 
+Algoritmo_Soma()
+Escreva (“A soma é: “ soma)
+FimAlgoritmo
+
+Algoritmo_Soma (N: inteiro): real 
+Var 
+	soma, n: real
+Inicio
+soma <- 1
+	n <- 0
+		Enquanto (n < N) faça
+soma = soma + (1/n)
+                  		n = n + 1
+        		 FimEnquanto
+	Retorna soma
+FimSegue

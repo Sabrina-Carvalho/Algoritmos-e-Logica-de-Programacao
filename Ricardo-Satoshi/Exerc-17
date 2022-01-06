@@ -1,0 +1,50 @@
+//Calcule a média dos alunos de uma disciplina. 
+//Considere uma matriz de 3 linhas e 2 colunas. Cada linha está associada a um aluno de uma determinada disciplina, e as colunas estão associadas às notas das duas provas referentes aquele estudante. O programa solicita a nota de cada aluno, exibe a média geral e a média de cada prova da turma (prova1 e prova2).
+
+Algoritmo_Media
+
+Declarar
+
+notas[3][2]: real
+mediaGeral: real
+mediaProva: real
+
+Inicio_algoritmo
+
+Para (x=0, x<3, x++)
+	mediaGeral = 0
+	mediaProva = 0
+	Para (y=0, y<2, y++)
+		Escreva("Insira a nota:")
+		Leia (nota[x][y])
+	Fim-para
+Fim-para
+
+Para (x=0, x<3, x++)
+	mediaGeral = 0
+	Para (y=0, y<2, y++)
+		mediaGeral = (mediaGeral + nota[x][y])
+	Fim-para
+Fim-para
+
+mediaGeral = (mediaGeral / 6)
+Escreva ("A média geral é: ", mediaGeral)
+
+Para (x=0, x<3, x++)
+	mediaProva = 0
+	mediaProva = (mediaProva + nota[x][0])
+Fim-para
+
+mediaProva = (mediaProva / 3)
+Escreva("A média da Prova 1 é: ", mediaProva)
+
+Para (x=0, x<3, x++)
+	mediaProva = 0;
+	mediaProva = (mediaProva + nota[x][1])
+Fim-para
+
+mediaProva = (mediaProva / 3)
+Escreva("A média da Prova 2 é: ", mediaProva)
+
+Fim_Algoritmo
+

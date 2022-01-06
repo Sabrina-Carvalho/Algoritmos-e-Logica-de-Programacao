@@ -1,0 +1,22 @@
+//O objetivo deste exemplo é desenvolver um algoritmo que efetue a leitura de dez elementos inteiros de um vetor Teste1. Vamos construir um vetor Teste2 do mesmo tipo, observando a seguinte regra de formação: se o valor do índice for par, o valor do elemento deverá ser multiplicado por 5; se for ímpar deverá ser somado com 5. Ao final, mostrar o conteúdo dos dois vetores.
+
+Algoritmo Exercício_01
+Início_algoritmo
+Declarar
+i: inteiro
+Teste1[10], Teste2[10]: inteiro
+Para i de 0 até 10 passo + 1 faça
+	Escrever (“Insira um valor para a posição ”, (i+1), “º”);
+	Ler (Teste1[i]);
+Fim_para 
+Para i de 0 até 10 passo +1 faça
+	Se (i mod 2 = 0) então 
+	Teste2[i] <- Teste1[i] * 5
+	Senão
+		Teste2[i] <- Teste1[i] + 5
+	Fim_se
+Fim_para
+Para i de 0 até 10 passo +1 faça
+Escrever(Teste1[i]);
+Escrever(Teste2[i]);
+Fim_algoritmo
