@@ -1,0 +1,38 @@
+//Receba o código correspondente ao cargo de um funcionário e seu salário atual e mostre a descrição do cargo, e o valor do seu novo salário. Os cargos estão na tabela. (Utilizar estrutura escolha... caso).
+
+Código  |  Cargo            |  Percentual
+1       |  Escriturário(a)  |  50%
+2       |  Secretário(a)    |  35%
+3       |  Caixa            |  20%
+4       |  Gerente          |  10%
+Outros  |  "Não há cargo"   |  ___
+
+Algoritmo Salario_Cargo
+
+//rotina para disponibilizar informações sobre o cargo selecionado e mostrar o reajuste do salário
+	Var
+	Cod: int; salario, salario_novo: real;
+
+Início_Algoritmo
+	Escolher (Cod);
+	Ler  (Cod);
+	Mostrar (“Insira aqui o seu salário atual:”); 
+	Ler (salario); 
+		Faça caso
+			Cod == 1 então
+				salario_novo = (salario + (salario * 0,50));
+Mostrar (“Seu atual cargo é Escriturário(a), e o seu novo salário será de:” salario_novo);
+Cod == 2 então
+				salario_novo = (salario + (salario * 0,35));
+Mostrar (“Seu atual cargo é Secretário(a), e o seu novo salário será de:” salario_novo);
+Cod == 3 então
+				salario_novo = (salario + (salario * 0,20));
+Mostrar (“Seu atual cargo é Caixa, e o seu novo salário será de:” salario_novo);
+Cod == 4 então
+				salario_novo = (salario + (salario * 0,10));
+Mostrar (“Seu atual cargo é Gerente, e o seu novo salário será de:” salario_novo);
+
+Outro_Caso
+			Mostrar (“Não há cargo.”);
+		Fim_caso;
+Fim_Algoritmo

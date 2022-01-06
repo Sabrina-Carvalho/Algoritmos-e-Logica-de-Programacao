@@ -1,0 +1,35 @@
+//Calcule a média aritmética. Mostre a mensagem de acordo com a média:
+
+Se a média for >= 6.0 ---------> exibir “APROVADO”;
+Se a média for >= 3.0 e < 6.0 -> exibir “EXAME”;
+Se a média for < 3.0 ----------> exibir “RETIDO”.
+
+Obs.: Utilizar:  Módulo(s) de Procedimento(s)
+
+
+Algoritmo "Calculo da Média - Aluno"
+Var
+   n1, n2, n3, n4, media: real
+Inicio
+      Escreva ("Insira as notas 1, 2, 3 e 4: ")
+      Leia (n1, n2, n3, n4)
+      media <- (n1 + n2 + n3 + n4) / 4
+      Cal_media()
+FimAlgoritmo
+
+Algoritmo Cal_media()
+Var
+   media: real
+Inicio
+            Se (media >= 6.0) entao
+               Escreva ("Média do aluno(a): ", media)
+               Escreva ("APROVADO")
+            Senao
+                 Se (media >= 3.0) e (media < 6.0) entao
+                    Escreva ("Média do aluno(a): ", media)
+                    Escreva (" EXAME")
+                 Senao
+                      Escreva ("RETIDO")
+                 FimSe
+            FimSe
+FimSegue

@@ -1,0 +1,11 @@
+//Mostre todas as possibilidades de 2 dados de forma que a soma tenha como resultado 7.
+
+Exemplo: 
+
+D1   +   D2 =  7  
+1    +   6  =  7
+2    +   5  =  7
+3    +   4  =  7
+4    +   3  =  7
+5    +   2  =  7
+6    +   1  =  7

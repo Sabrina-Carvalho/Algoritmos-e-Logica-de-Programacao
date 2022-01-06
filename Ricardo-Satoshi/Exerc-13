@@ -1,0 +1,40 @@
+//Receba a hora de início e de final de um jogo (HH,MM), calcular o tempo do jogo em horas e minutos, sabendo que o tempo máximo é menor que 24 horas e pode começar num dia e terminar em outro.
+
+Algoritmo "Jogo_Horas"
+Var
+      hi, hf, ht, mi, mf, mt: inteiro
+Inicio
+Algoritmo Cal_horas ()
+Se (hi < hf) então
+	ht <- hf – hi
+Senao
+	Se (hi > hf) então
+		ht <- (hf + 24) – hi
+	Senao
+           		Se (mi > mf) entao
+              		ht <- ht – 1
+		Senao
+           			Se (mi < mf) entao
+             	 			mt <- mf - mi
+           			Senao
+                			Se (mi > mf) entao
+                   				mt <- (mf + 60) – mi
+				FimSe
+			FimSe
+		FimSe
+	FimSe
+FimSe
+Se ((hi <= 23) ou (hf <= 23) ou (mi < 59) ou (mf < 59)) então
+	Escreva (ht, ":",mt)
+FimSe
+FimAlgoritmo
+
+Algoritmo Cal_horas ()
+Var 
+hi, hf, mi, mf: inteiro
+Inicio
+Escreva ("Insira em horas e minutos, o início do jogo:")
+      Leia (hi, mi)
+      Escreva ("Insira em horas e minutos, o fim do jogo:")
+      Leia (hf, mf)
+FimSegue
