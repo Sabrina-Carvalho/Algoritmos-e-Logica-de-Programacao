@@ -7,32 +7,47 @@ Código  |  Cargo            |  Percentual
 4       |  Gerente          |  10%
 Outros  |  "Não há cargo"   |  ___
 
-Algoritmo Salario_Cargo
+
+Algoritmo "Salario-Cargo"
 
 //rotina para disponibilizar informações sobre o cargo selecionado e mostrar o reajuste do salário
-	Var
-	Cod: int; salario, salario_novo: real;
 
-Início_Algoritmo
-	Escolher (Cod);
-	Ler  (Cod);
-	Mostrar (“Insira aqui o seu salário atual:”); 
-	Ler (salario); 
-		Faça caso
-			Cod == 1 então
-				salario_novo = (salario + (salario * 0,50));
-Mostrar (“Seu atual cargo é Escriturário(a), e o seu novo salário será de:” salario_novo);
-Cod == 2 então
-				salario_novo = (salario + (salario * 0,35));
-Mostrar (“Seu atual cargo é Secretário(a), e o seu novo salário será de:” salario_novo);
-Cod == 3 então
-				salario_novo = (salario + (salario * 0,20));
-Mostrar (“Seu atual cargo é Caixa, e o seu novo salário será de:” salario_novo);
-Cod == 4 então
-				salario_novo = (salario + (salario * 0,10));
-Mostrar (“Seu atual cargo é Gerente, e o seu novo salário será de:” salario_novo);
+Var
+cod: inteiro
+salario, salario_novo: real
 
-Outro_Caso
-			Mostrar (“Não há cargo.”);
-		Fim_caso;
-Fim_Algoritmo
+Inicio
+Escreva ("Insira aqui o seu salário atual: ")
+Leia(salario)
+Escreva ("Insira aqui o código correspondente ao seu cargo atual: ")
+Leia (cod)
+Escolha cod
+Caso 1
+    salario_novo <- (salario + ((salario * 50)/100))
+    Escreval ("   ")
+    Escreva ("Seu atual cargo é Escriturário(a), e o seu novo salário será de: ")
+    Escreva ("R$",salario_novo)
+     
+Caso 2
+    salario_novo <- (salario + ((salario * 35)/100))
+    Escreval ("   ")
+    Escreva ("Seu atual cargo é Secretário(a), e o seu novo salário será de: ")
+    Escreva ("R$",salario_novo)
+     
+Caso 3
+    salario_novo <- (salario + ((salario * 20)/100))
+    Escreval ("   ")
+    Escreva ("Seu atual cargo é Caixa, e o seu novo salário será de: ")
+    Escreva ("R$",salario_novo)
+     
+Caso 4
+    salario_novo <- (salario + ((salario * 10)/100))
+    Escreval ("   ")
+    Escreva ("Seu atual cargo é Gerente, e o seu novo salário será de: ")
+    Escreva ("R$",salario_novo)
+
+OutroCaso
+    Escreval ("   ")
+    Escreva ("Não há cargo.")
+Fimescolha
+Fimalgoritmo
