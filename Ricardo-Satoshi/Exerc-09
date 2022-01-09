@@ -1,26 +1,26 @@
 //Receba 2 valores inteiros. Calcule e mostre o resultado da diferença do maior pelo menor valor.
 
-//NÃO CONSEGUI TESTAR AINDA
-
 Algoritmo "Diferenca-entre-Inteiros"
 
 Var
-x, y, z: inteiro
+X, Y, Z: real
 
 Inicio
-Escreval ("Insira aqui o valor de X: ")
-Leia (x)
-Escreval ("Insira aqui o valor de Y: ")
-Leia (y)
-Se (x > y) então
-   z <- (x – y)
-   Escreval ("O maior nº é: ", x)
-   Escreval ("O menor nº é: ", y)
-   Escreval ("A diferença entre os dois valores é de: ", z)
+X <- 0
+Y <- 0
+Z <- 0
+Escreval("Insira três valores em ordem crescente para X, Y: ")
+Leia (X, Y)
+Escreval ("  ")
+Se (Y <= X) então
+   Z <- X - Y
+   Escreval ("O maior nº é: ", X)
+   Escreval ("O menor nº é: ", Y)
+   Escreval ("A diferença entre os dois valores é de: ", Z)
 Senão
-     z <- (y – x)
-     Escreval ("O maior nº é: ", y)
-     Escreval ("O menor nº é: ", x)
-     Escreval ("A diferença entre os dois valores é de: ", z)
+   Z <- Y - X
+   Escreval ("O maior nº é: ", Y)
+   Escreval ("O menor nº é: ", X)
+   Escreval ("A diferença entre os dois valores é de: ", Z)
 Fimse
 Fimalgoritmo
