@@ -1,29 +1,35 @@
 //Receba 3 valores obrigatoriamente em ordem crescente e um 4º valor não necessariamente em ordem. Mostre os 4 números em ordem crescente.
 
-Algoritmo Num_em_Ordem_Cresc
-// rotina para organizar quatro valores em ordem crescente
-	Var
-	X, Y, W, Z: real;
-		X = 0
-		Y = 0
-		W = 0
-		Z = 0
-Início_Algortimo
-	Mostrar (“Insira aqui três valores em ordem crescente para X, Y e W:”); 
-Ler (X, Y, W); 
-	Mostrar (“Insira aqui um valor aleatória para Z:”); 
-	Ler (Z); 
-		Se (Z <= X) então
-			Mostrar (“Z”, “X”, “Y”, “W”); 
-		Senão
-		Se (X <= Z) então
-			Mostrar (“X”, “Z”, “Y”, “W”);
-		Senão
-		Se (Y <= Z) então 
-			Mostrar (“X”, “Y”, “Z”, “W”);
-		Senão 
-			Mostrar (“X”, “Y”, “W”, “Z”);
-		Fim se 
-		Fim-se
-		Fim-se
-	Fim_algoritmo
+Algoritmo "Numero-em-Ordem-Crescente"
+
+Var
+X, Y, W, Z: real
+
+Inicio
+X <- 0
+Y <- 0
+W <- 0
+Z <- 0
+Escreval("Insira três valores em ordem crescente para X, Y e W: ")
+Leia (X, Y, W)
+Escreval ("Insira um valor aleatória para Z: ")
+Leia(Z)
+Escreval ("  ")
+Se (Z <= X) então
+   Escreva ("Segue-se os nºs inseridos em ordem crescente: ")
+   Escreval (Z, X, Y, W)
+Senão
+    Se (X <= Z) e (Z <= Y)  então
+        Escreval ("Segue-se os nºs inseridos em ordem crescente: ")
+        Escreval (X, Z, Y, W)
+    Senão
+        Se (Y <= Z) e (Z <= W) então
+            Escreval ("Segue-se os nºs inseridos em ordem crescente: ")
+            Escreval (X, Y, Z, W)
+        Senão
+            Escreval ("Segue-se os nºs inseridos em ordem crescente: ")
+            Escreval (X, Y, W, Z)
+Fimse
+    Fimse
+        Fimse
+Fimalgoritmo
