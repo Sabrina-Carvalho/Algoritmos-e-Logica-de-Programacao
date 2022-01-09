@@ -1,19 +1,26 @@
 //Receba 2 valores inteiros. Calcule e mostre o resultado da diferença do maior pelo menor valor.
 
-Algoritmo Diferenca_de_Inteiros
-// rotina que calcula e mostra o resultado da diferença  de dois valores inteiros, do maior pelo menor valor 
-Var 
-X, Y, Z: int;
-		X = 0
-		Y = 0
-		Z = 0
-Início_Algoritmo
-	Mostrar (“Insira aqui o valor de X:”);
-	Mostrar (“Insira aqui o valor de Y:”); 
-Ler (X, Y);
-		Se (X > Y) então
-			Z = (X – Y);
-			Senão
-			Z = (Y – X);
-			Fim-se;
-Fim_Algoritmo
+//NÃO CONSEGUI TESTAR AINDA
+
+Algoritmo "Diferenca-entre-Inteiros"
+
+Var
+x, y, z: inteiro
+
+Inicio
+Escreval ("Insira aqui o valor de X: ")
+Leia (x)
+Escreval ("Insira aqui o valor de Y: ")
+Leia (y)
+Se (x > y) então
+   z <- (x – y)
+   Escreval ("O maior nº é: ", x)
+   Escreval ("O menor nº é: ", y)
+   Escreval ("A diferença entre os dois valores é de: ", z)
+Senão
+     z <- (y – x)
+     Escreval ("O maior nº é: ", y)
+     Escreval ("O menor nº é: ", x)
+     Escreval ("A diferença entre os dois valores é de: ", z)
+Fimse
+Fimalgoritmo
