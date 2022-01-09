@@ -9,3 +9,20 @@ D1   +   D2 =  7
 4    +   3  =  7
 5    +   2  =  7
 6    +   1  =  7
+
+Algoritmo "Dados"
+
+var
+dado1, dado2: inteiro
+
+Inicio
+
+Para dado1 de 1 ate 6 passo dado1+1 Faça
+    Para dado2 de 6 ate 1 passo dado2-1 Faça
+         Se (dado1 + dado2 = 7) então
+            Escreval (dado1, " + ", dado2, " = ", " 7")
+         Fimse
+    Fimpara
+Fimpara
+
+Fimalgoritmo
