@@ -29,5 +29,6 @@ Antes de começarmos, explicarei o propósito deste repositório:
  2. Link para **baixar o VisualG** --> https://visualg3.com.br/baixar-o-visualg3-0/
  
  ---
- 
-`😉 Bons estudos!!`
+ ![EveryonecanCode](https://i2.paste.pics/9a190750ec4e8e2814b81b4e37ad68b5.png)
+ ##
+`😉 Bons estudos!!` 
