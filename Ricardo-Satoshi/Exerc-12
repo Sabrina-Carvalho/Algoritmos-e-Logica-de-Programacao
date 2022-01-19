@@ -6,7 +6,7 @@
 
 //Obs.: Utilizar:  Módulo(s) de Procedimento(s)
 
-Algoritmo "Calculo-da-Média-do-Aluno"
+Algoritmo "Calculo-da-Media-do-Aluno"
 
 Var
    n1, n2, n3, n4, media: real
