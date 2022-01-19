@@ -1,0 +1,22 @@
+//Desenvolva um programa que leia um número inteiro e mostre se ele é PAR ou ÍMPAR.
+//Utilize Módulo(s) de Procedimento(s)
+
+Algoritmo "Par-ou-Impar-Procedimento"
+
+Var
+n: inteiro
+
+Procedimento ParouImpar(v: inteiro)
+Inicio
+      Se (v %2 = 0) então
+         Escreval ("O número ", v, " é PAR")
+      Senão
+           Escreval("O número ", v, " é ÍMPAR")
+      FimSe
+FimProcedimento
+
+Inicio
+      Escreva ("Digite um número: ")
+      Leia (n)
+      ParouImpar(n)
+FimAlgoritmo

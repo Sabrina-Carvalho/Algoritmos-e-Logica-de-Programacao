@@ -1,35 +1,44 @@
 //Calcule a média aritmética. Mostre a mensagem de acordo com a média:
 
-Se a média for >= 6.0 ---------> exibir “APROVADO”;
-Se a média for >= 3.0 e < 6.0 -> exibir “EXAME”;
-Se a média for < 3.0 ----------> exibir “RETIDO”.
+//Se a média for >= 6.0 ---------> exibir “APROVADO”;
+//Se a média for >= 3.0 e < 6.0 -> exibir “EXAME”;
+//Se a média for < 3.0 ----------> exibir “RETIDO”.
 
-Obs.: Utilizar:  Módulo(s) de Procedimento(s)
+//Obs.: Utilizar:  Módulo(s) de Procedimento(s)
 
+Algoritmo "Calculo-da-Média-do-Aluno"
 
-Algoritmo "Calculo da Média - Aluno"
 Var
    n1, n2, n3, n4, media: real
-Inicio
-      Escreva ("Insira as notas 1, 2, 3 e 4: ")
-      Leia (n1, n2, n3, n4)
-      media <- (n1 + n2 + n3 + n4) / 4
-      Cal_media()
-FimAlgoritmo
 
-Algoritmo Cal_media()
-Var
-   media: real
+Procedimento calcAluno(media: real)
 Inicio
             Se (media >= 6.0) entao
-               Escreva ("Média do aluno(a): ", media)
-               Escreva ("APROVADO")
+               Escreval ("   ")
+               Escreval ("Média do aluno(a): ", media)
+               Escreva ("Aluno(a) APROVADO(A) :D")
             Senao
                  Se (media >= 3.0) e (media < 6.0) entao
-                    Escreva ("Média do aluno(a): ", media)
-                    Escreva (" EXAME")
+                    Escreval ("   ")
+                    Escreval ("Média do aluno(a): ", media)
+                    Escreva ("Aluno(a) em EXAME :/")
                  Senao
-                      Escreva ("RETIDO")
+                      Escreval ("   ")
+                      Escreval ("Média do aluno(a): ", media)
+                      Escreva ("Aluno(a) RETIDO(A) :(")
                  FimSe
             FimSe
-FimSegue
+FimProcedimento
+
+Inicio
+      Escreva ("Insira a 1ª nota: ")
+      Leia (n1)
+      Escreva ("Insira a 2ª nota: ")
+      Leia (n2)
+      Escreva ("Insira a 3ª nota: ")
+      Leia (n3)
+      Escreva ("Insira a 4ª nota: ")
+      Leia (n4)
+      media <- (n1 + n2 + n3 + n4) / 4
+      calcaluno(media)
+FimAlgoritmo
