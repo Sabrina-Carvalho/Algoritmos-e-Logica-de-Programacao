@@ -1,4 +1,5 @@
 //Uma pequena loja de artesanato possui apenas um vendedor e comercializa cinco tipos de objetos. O vendedor recebe, mensalmente, salário de R$ 400,00, acrescido de 5% do valor total de suas vendas. O valor unitário dos objetos deve ser informado e armazenado em um vetor: a quantidade vendida de cada peça deve ficar em outro vetor, mas na mesma posição. Crie um programa que receba os preços e as quantidades vendidas, armazenando-os em seus respectivos vetores (ambos com tamanho cinco). Depois, determine e mostre um relatório contendo quantidade vendida, valor unitário e valor total de cada objeto. Ao final deverá ser mostrado o valor geral das vendas e o valor da comissão que será paga ao vendedor.
+//refazer
 
 Algoritmo Exercicio1_loja
 início_algoritmo
@@ -25,3 +26,46 @@ início_algoritmo
        comissão <- (tot_geral * 0.05);
        escrever (""Valor total das vendas: " , tot_geral , " Valor da comissão: " , comissao);
 fim_algoritmo.
+
+-----------------------------------------------------
+
+Algoritmo "Loja"
+
+Var
+qtd: vetor[1..5] de real
+preco: vetor[1..5] de real
+qtdProdPreco: vetor[1..5] de real   // qtd * preço = de cada produto
+qtdGeralVendida, i: inteiro        //qtdVendidaGeral = qtd de prods que foram vendidos ao todo
+totGeralVendas: real        //Valor geral de todos os produtos juntos
+
+Inicio
+totGeralVendas <- 0
+qtdGeralVendida <- 0
+
+para i <- 1 até 5 passo +1 faca
+     Escreva ("Insira a quantidade vendida do ", i, "º produto: ")
+     Leia (qtd[i])
+     Escreva ("Insira o preço do ", i, "º produto: ")
+     Leia (preco[i])
+     Para i de 1 até 5 passo +1 faca
+          qtdProdPreco[i] <- qtdProdPreco + (qtd[i] * preco[i])
+          qtdGeralVendida <- qtdGeralVendida + qtd[i]
+     FimPara
+FimPara
+
+Escreval("###RELATÓRIO - PRODUTO###")
+Escreval("   ")
+
+Para i <- 1 até 5 passo +1 faça
+     Escreval("PRODUTO", i, ":")
+     Escreval("Quantidade vendida: ", qtd[i])
+     Escreval("Valor da venda: ", preco[i])
+     Escreval("Total vendido: R$", qtdProdPreco[i])
+     totGeralVendas <- totGeralVendas + qtdProdPreco[i]
+FimPara
+
+Escreval("   ")
+Escreval("###RELATÓRIO FINAL###")
+Escreval("   ")
+Escreval("Total de Venda: R$", totGeralVendas)
+Escreval("Qauntidade de Produtos Vendidos: ")
