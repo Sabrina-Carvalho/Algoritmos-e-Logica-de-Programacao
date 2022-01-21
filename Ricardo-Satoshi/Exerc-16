@@ -1,71 +1,60 @@
 //Uma pequena loja de artesanato possui apenas um vendedor e comercializa cinco tipos de objetos. O vendedor recebe, mensalmente, salário de R$ 400,00, acrescido de 5% do valor total de suas vendas. O valor unitário dos objetos deve ser informado e armazenado em um vetor: a quantidade vendida de cada peça deve ficar em outro vetor, mas na mesma posição. Crie um programa que receba os preços e as quantidades vendidas, armazenando-os em seus respectivos vetores (ambos com tamanho cinco). Depois, determine e mostre um relatório contendo quantidade vendida, valor unitário e valor total de cada objeto. Ao final deverá ser mostrado o valor geral das vendas e o valor da comissão que será paga ao vendedor.
-//refazer
-
-Algoritmo Exercicio1_loja
-início_algoritmo
-    Declarar
-        i numérico_inteiro;
-        qtd[5] , preço[5], tot_geral, tot_vend, comissão numérico_real;
-         i: inteiro
-        tot_geral <- 0;
-       // processamento de dados
-       para i de 0 até 4 passo + 1 faça
-          escrever ("Digite a quantidade vendida do ",  (i+1) , "o produto: ");
-          ler (qtd[i];
-          escrever ("Digite o preco do " , (i+1) , "o produto: ");
-          ler (preço[i];
-       fim_para;
-
-       para i de 0 até 4 passo + 1 faça
-          tot_vend  <- qtd[i] * preço[i];
-          escrever("Quantidade vendida do " , (i+1) , "o produto: " , qtd[i] , " Valor do " , (i+1) , "o produto:   
-                        " , preco[i] , " Total geral da venda: " , tot_vend);
-          tot_geral <- tot_geral + tot_vend;
-       fim_para;
-
-       comissão <- (tot_geral * 0.05);
-       escrever (""Valor total das vendas: " , tot_geral , " Valor da comissão: " , comissao);
-fim_algoritmo.
-
------------------------------------------------------
 
 Algoritmo "Loja"
 
 Var
-qtd: vetor[1..5] de real
-preco: vetor[1..5] de real
-qtdProdPreco: vetor[1..5] de real   // qtd * preço = de cada produto
-qtdGeralVendida, i: inteiro        //qtdVendidaGeral = qtd de prods que foram vendidos ao todo
-totGeralVendas: real        //Valor geral de todos os produtos juntos
+qtdVendida: vetor[1..5] de real      
+precoProduto: vetor[1..5] de real           
+qtdPreco: vetor[1..5]de real        
+i: inteiro
+totGeral_vendas,qtdVendida_produto: real
+
+//qtdVendida = qtd vendida de cada peça
+//precoProduto = valor unitário de cada produto
+//qtdPreco = qtd * preço = total das vendas de cada produto
+//qtdPreco = qtd * preço = total das vendas de cada produto
+//totGeral_vendas = Valor geral de todos os produtos juntos
+//qtdVendida_produto = qtd de produtor que foram vendidos ao todo
 
 Inicio
-totGeralVendas <- 0
-qtdGeralVendida <- 0
+totGeral_vendas <- 0
+qtdVendida_produto <- 0
 
-para i <- 1 até 5 passo +1 faca
+Para i <- 1 até 5 faça
+     Escreval("   ")
      Escreva ("Insira a quantidade vendida do ", i, "º produto: ")
-     Leia (qtd[i])
+     Leia (qtdVendida[i])
+     qtdVendida_produto <- qtdVendida_produto + qtdVendida[i]
      Escreva ("Insira o preço do ", i, "º produto: ")
-     Leia (preco[i])
-     Para i de 1 até 5 passo +1 faca
-          qtdProdPreco[i] <- qtdProdPreco + (qtd[i] * preco[i])
-          qtdGeralVendida <- qtdGeralVendida + qtd[i]
-     FimPara
+     Leia (precoProduto[i])
 FimPara
 
+     para i <- 1 até 5 faça
+          qtdPreco[i] <- qtdVendida[i] * precoProduto[i]
+     FimPara
+     
+LimpaTela
+Escreval("   ")
 Escreval("###RELATÓRIO - PRODUTO###")
 Escreval("   ")
 
-Para i <- 1 até 5 passo +1 faça
+Para i <- 1 até 5 faça
+     Escreval("   ")
+     Escreval("~~~~~~~~~~~~~~~~~~~~")
+     Escreval("   ")
      Escreval("PRODUTO", i, ":")
-     Escreval("Quantidade vendida: ", qtd[i])
-     Escreval("Valor da venda: ", preco[i])
-     Escreval("Total vendido: R$", qtdProdPreco[i])
-     totGeralVendas <- totGeralVendas + qtdProdPreco[i]
+     Escreval("Quantidade vendida: ", qtdVendida[i]:5:2)
+     Escreval("Valor da venda: R$", precoProduto[i]:5:2)
+     Escreval("Total vendido: R$", qtdPreco[i]:5:2)
+     totGeral_vendas <- totGeral_vendas + qtdPreco[i]
 FimPara
-
+Escreval("   ")
+Escreval("   ")
+Escreval("~~~~~~~~~~~~~~~~~~~~")
 Escreval("   ")
 Escreval("###RELATÓRIO FINAL###")
 Escreval("   ")
-Escreval("Total de Venda: R$", totGeralVendas)
-Escreval("Qauntidade de Produtos Vendidos: ")
+Escreval("Total das Vendas: R$", totGeral_vendas:5:2)
+Escreval("Quantidade de Produtos Vendidos: ", qtdVendida_produto)
+
+FimAlgoritmo
