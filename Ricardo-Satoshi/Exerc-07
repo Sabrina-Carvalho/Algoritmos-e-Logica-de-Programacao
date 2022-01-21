@@ -1,4 +1,5 @@
 //Receba um número. Calcule e mostre a soma da série:
+//Obs.: Utilizar  Módulo(s) de Função(ões)
 //refazer
 
 Exemplo: 
@@ -9,7 +10,6 @@ SERIE -> 1 + 1/2 + 1/3 + 1/4 ->
 SERIE -> 1 + 0.5 + 0.33 + 0.25 ->
 SERIE -> 2,08
 
-Obs.: Utilizar  Módulo(s) de Função(ões)
 
 Algoritmo Cal_serie_principal 
 Var
