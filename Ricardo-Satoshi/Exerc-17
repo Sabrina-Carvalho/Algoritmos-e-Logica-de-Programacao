@@ -1,51 +1,46 @@
 //Calcule a média dos alunos de uma disciplina. 
 //Considere uma matriz de 3 linhas e 2 colunas. Cada linha está associada a um aluno de uma determinada disciplina, e as colunas estão associadas às notas das duas provas referentes aquele estudante. O programa solicita a nota de cada aluno, exibe a média geral e a média de cada prova da turma (prova1 e prova2).
-//refazer
 
-Algoritmo_Media
+Algoritmo "Media-Vetor"
 
-Declarar
+Var
 
-notas[3][2]: real
+nota: vetor[1..3, 1..2] de real
 mediaGeral: real
 mediaProva: real
+l, c: inteiro
 
-Inicio_algoritmo
+Inicio
+    mediaGeral <- 0
+	mediaProva <- 0
+   //Pedindo a nota
+Para l <- 1 ate 3 faça
+     Escreval ("Insira as notas do ", l, "º aluno: (Prova1 & Prova2))")
+	Para c <- 1 até 2 faca
+    	leia(nota[l,c])
+	Fimpara
+Fimpara
+//mostrando a media geral
+Para l <- 1 até 3 faça
+	Para c <- 1 até 2 faça
+		mediaGeral <- mediaGeral + nota[l,c]
+	Fimpara
+Fimpara
+mediaGeral <- (mediaGeral / 6)
+Escreval("A média geral é: ", mediaGeral:5:2)
 
-Para (x=0, x<3, x++)
-	mediaGeral = 0
-	mediaProva = 0
-	Para (y=0, y<2, y++)
-		Escreva("Insira a nota:")
-		Leia (nota[x][y])
-	Fim-para
-Fim-para
+//mostrando a media da prova 1
+Para l <- 1 até 3 faça
+	mediaProva <- mediaProva + nota[l,1]
+Fimpara
+mediaProva <- (mediaProva / 3)
+Escreval("A média da Prova 1 é: ", mediaProva:5:2)
 
-Para (x=0, x<3, x++)
-	mediaGeral = 0
-	Para (y=0, y<2, y++)
-		mediaGeral = (mediaGeral + nota[x][y])
-	Fim-para
-Fim-para
+//mostrando a media da prova 2
+Para l <- 1 até 3 faça
+	mediaProva <- mediaProva + nota[l,2]
+Fimpara
+mediaProva <- (mediaProva / 3)
+Escreval("A média da Prova 2 é: ", mediaProva:5:2)
 
-mediaGeral = (mediaGeral / 6)
-Escreva ("A média geral é: ", mediaGeral)
-
-Para (x=0, x<3, x++)
-	mediaProva = 0
-	mediaProva = (mediaProva + nota[x][0])
-Fim-para
-
-mediaProva = (mediaProva / 3)
-Escreva("A média da Prova 1 é: ", mediaProva)
-
-Para (x=0, x<3, x++)
-	mediaProva = 0;
-	mediaProva = (mediaProva + nota[x][1])
-Fim-para
-
-mediaProva = (mediaProva / 3)
-Escreva("A média da Prova 2 é: ", mediaProva)
-
-Fim_Algoritmo
-
+FimAlgoritmo
