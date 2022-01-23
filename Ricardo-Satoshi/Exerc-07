@@ -1,6 +1,5 @@
 //Receba um número. Calcule e mostre a soma da série:
 //Obs.: Utilizar  Módulo(s) de Função(ões)
-//refazer
 
 Exemplo: 
 1 + 1/2 + 1/3 + ... + 1/N.  
@@ -11,25 +10,32 @@ SERIE -> 1 + 0.5 + 0.33 + 0.25 ->
 SERIE -> 2,08
 
 
-Algoritmo Cal_serie_principal 
-Var
-	N: inteiro
-Inicio
-Escreva (“Digite um número: “) 
-Leia (N) 
-Algoritmo_Soma()
-Escreva (“A soma é: “ soma)
-FimAlgoritmo
+Algoritmo "Calcular-Serie"
 
-Algoritmo_Soma (N: inteiro): real 
-Var 
-	soma, n: real
+Var
+N: inteiro
+soma:real
+
+Funcao funcaoSoma(N, soma: real): real
+
+Var
+c: inteiro
+
 Inicio
-soma <- 1
-	n <- 0
-		Enquanto (n < N) faça
-soma = soma + (1/n)
-                  		n = n + 1
-        		 FimEnquanto
-	Retorna soma
-FimSegue
+
+soma <- 0
+c <- 0
+Enquanto (c < N) faça
+    c <- c + 1
+    soma <- soma + (1/c)
+FimEnquanto
+Retorne soma
+FimFuncao
+
+Inicio
+
+Escreva ("Digite um número: ")
+Leia (N)
+soma <- funcaoSoma(N,soma)
+Escreva("A soma da série é: ", soma:5:2)
+FimAlgoritmo
