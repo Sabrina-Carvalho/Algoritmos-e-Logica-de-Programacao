@@ -3,13 +3,13 @@
 Algoritmo "Alimentos"
 
 Var
-	qtd_alimentos, gramas: inteiro
-	dias: real
+	qtd_alimentos: real
+	dias: inteiro
 
 Inicio
 	Escreva ("Insira em quilos, a quantidade de alimentos: ")
    	Leia (qtd_alimentos)
-	gramas <- (qtd_alimentos * 1000)
-	dias <- (gramas / 50)
-	Escreval (qtd_alimentos, "kg de alimento durará para ", dias, " dias.")
+	qtd_alimentos <- (qtd_alimentos * 1000)
+	dias <- (qtd_alimentos / 50)
+	Escreval (qtd_alimentos, "gramas de alimento durará para ", dias, " dias.")
 Fimalgoritmo
