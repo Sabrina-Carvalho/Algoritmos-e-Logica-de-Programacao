@@ -1,5 +1,7 @@
 //Calcule a média dos alunos de uma disciplina. 
-//Considere uma matriz de 3 linhas e 2 colunas. Cada linha está associada a um aluno de uma determinada disciplina, e as colunas estão associadas às notas das duas provas referentes aquele estudante. O programa solicita a nota de cada aluno, exibe a média geral e a média de cada prova da turma (prova1 e prova2).
+//Considere uma matriz de 3 linhas e 2 colunas. Cada linha está associada a um aluno de uma determinada disciplina, 
+//e as colunas estão associadas às notas das duas provas referentes aquele estudante. 
+//O programa solicita a nota de cada aluno, exibe a média geral e a média de cada prova da turma (prova1 e prova2).
 
 Algoritmo "Media-Vetor"
 
